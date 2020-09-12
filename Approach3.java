@@ -18,7 +18,7 @@ public class Approach3 {
 		
 		for(int i = 0; i < candidates.length && candidates[i] <= target; i++)
 		{
-			HashSet<Node> newLeaves = new HashSet<Node>();
+			Set<Node> newLeaves = new HashSet<Node>();
 			for(Node node: leaves)
 			{
 				Node n = new Node(candidates[i], node.getValue(), node.getPath());
