@@ -60,4 +60,4 @@ If the value of a node is equal to the target, then its path is added to the lis
 **Complexity Analysis:**
 * **Time complexity:** O(n*m). In average, we’ll get a better performance than in the previous solutions, because we are eliminating a lot of nodes (when they are bigger than the target or when they are a valid solution). m is the amount of leaves to analyze in a given time. 
 In the worst scenario, m get closer to 2^n in the last iteration. For example, candidates=[1, 10, 57, 136, 399, 1000] and target=122000, and there’s no valid solution.
-* **Space complexity:** O(m). The extra space required depends on the number of nodes on the list, which could hold 2^n nodes in the worst scenario.
+* **Space complexity:** O(m). The extra space required depends on the number of nodes on the list, which could hold 2^n nodes in the worst scenario. Keep in mind that the built-in method “addAll” copies by reference, it doesn’t duplicate the elements.
